@@ -1,0 +1,31 @@
+sampling:
+  kinematic_fs_hz: 100.0
+  analog_fs_hz: 1000.0
+
+filtering:
+  marker_cutoff_hz: 6.0
+  angle_cutoff_hz: 6.0
+  kinetic_cutoff_hz: 10.0
+  grf_cutoff_hz: 20.0
+  filter_order: 4
+
+artifacts:
+  max_short_gap_s: 0.10
+  analog_max_short_gap_s: 0.02
+  hampel_window_s: 0.11
+  hampel_n_sigma: 3.5
+
+segmentation:
+  min_cycle_s: 0.65
+  max_cycle_s: 1.80
+  normalized_points: 101
+
+events:
+  min_stance_s: 0.25
+  min_swing_s: 0.18
+
+  contact_on_bw: 0.05
+  contact_off_bw: 0.025
+
+  contact_on_min_n: 20.0
+  contact_off_min_n: 10.0

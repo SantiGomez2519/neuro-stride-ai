@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gait-analysis-experimentation"
+version = "0.1.0"
+description = "Experimentation notebooks for simulated gait analysis"
+requires-python = ">=3.10"
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "matplotlib",
+    "seaborn",
+    "pyyaml",
+    "jupyter",
+    "gait-analysis-shared",
+]
+
+[tool.uv.sources]
+gait-analysis-shared = { path = "../shared", editable = true }
